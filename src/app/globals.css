@@ -2,27 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #E0E5C6;
-  --foreground: #1b2418;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1b2418;
-    --foreground: #E0E5C6;
-  }
-}
-
 body {
 
   background-color: #FFF4F7; /* light sage green */
-  color: #34004a; /* dark navy green */
+  color: #4a0033; /* dark navy green */
   font-family: Georgia, serif; /* professional font */
 }
 
 .coolGrade {
-  background: -webkit-linear-gradient(right,#7aa06a, #165d2c);
+  background: -webkit-linear-gradient(right,#e7b5e2, #5d1649);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: larger;

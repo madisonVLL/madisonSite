@@ -1,5 +1,5 @@
 "use client"
-import Logo from "./public/images/Madison-3.png";
+import Logo from "./images/Madison-3.png";
 import Link from "next/link";
 import Image from "next/image";
 import React from 'react';
@@ -22,34 +22,34 @@ export default function RootLayout({
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/">
-                <Image src={Logo} alt="Logo" width="150" height="100"/>
+                <Image src={Logo} alt="Logo" width="155" height="100" className="p-3"/>
               </Link>
             </div>
 
             {/* Desktop Links */}
             <div className="hidden md:flex space-x-4 items-center">
               <Link href="/">
-                <p className="text-[#15310B]  hover:text-[#E0E5C6]">Home</p>
+                <p className="text-[#15310B]  hover:text-[#c11c84]">Home</p>
               </Link>
               <Link href="/portfolio">
-                <p className="text-[#15310B]  hover:text-[#E0E5C6]">Portfolio</p>
+                <p className="text-[#15310B]  hover:text-[#c11c84] hover:text-bold">Portfolio</p>
               </Link>
-              <Link href="/services">
-                <p className="text-[#15310B]  hover:text-[#E0E5C6]">Services</p>
+              <Link href="https://uchicagoedu-my.sharepoint.com/:w:/g/personal/mmv773_uchicago_edu/ES5Gd0QUojFFm-ZWRHYuN44BLERConIRJyt8d6mROAOIvA?e=Al0dCN" target="_blank">
+                <p className="text-[#15310B]  hover:text-[#c11c84]">Resume</p>
               </Link>
               <Link href="/contact">
-                <p className="text-[#15310B]  hover:text-[#E0E5C6]">Contact Us</p>
+                <p className="text-[#15310B]  hover:text-[#c11c84]">Contact Me</p>
               </Link>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="flex items-center md:hidden item-center">
+            <div className="flex items-center md:hidden items-center">
               <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
               height="50"
               fill="#c11c84"
-              className="right-0"
+              className="right-0 py-2"
               onClick={() => {setShowMobile(!showMobile)}}
 
             >
@@ -63,22 +63,22 @@ export default function RootLayout({
           {showMobile && 
             <div className="px-2 pt-2 pb-3 space-y-1">
             <Link href="/" onClick={() => {setShowMobile(!showMobile)}}>
-              <p className="text-[#15310B]  hover:text-[#E0E5C6] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
+              <p className="text-[#15310B]  hover:text-[#c11c84] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
                 Home
               </p>
             </Link>
             <Link href="/portfolio" onClick={() => {setShowMobile(!showMobile)}}>
-              <p className="text-[#15310B]  hover:text-[#E0E5C6] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
+              <p className="text-[#15310B]  hover:text-[#c11c84] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
                 Portfolio
               </p>
             </Link>
             <Link href="/services" onClick={() => {setShowMobile(!showMobile)}}>
-              <p className="text-[#15310B]  hover:text-[#E0E5C6] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
+              <p className="text-[#15310B]  hover:text-[#c11c84] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
                 Services
               </p>
             </Link>
             <Link href="/contact" onClick={() => {setShowMobile(!showMobile)}}>
-              <p className="text-[#15310B]  hover:text-[#E0E5C6] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
+              <p className="text-[#15310B]  hover:text-[#c11c84] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
                 Contact Us
               </p>
             </Link>
@@ -87,15 +87,13 @@ export default function RootLayout({
         </nav>
       </header>
 
-      <main className="flex-grow bg-cover bg-center bg-no-repeat m-2 p-4">{children}</main>
+      <main className="flex-grow bg-cover bg-center bg-no-repeat">{children}</main>
 
       <footer className="bg-white shadow-xl py-4">
         <div className='grid  sm-grid-col-1 grid-cols-3 w-full text-center'>
-          <Link href="/privacy">
-            <p className="text-[#15310B]  hover:text-[#E0E5C6]">Privacy Policy</p>
-          </Link>
-          <p>© WebAlity 2024</p>
-          <Link href="malito: madison@landlocket.com" className='hover:text-[#E0E5C6]'>Email</Link>
+  
+          <p>© Madison Vanderbilt</p>
+          <Link href="malito: madison@landlocket.com" className='hover:text-[#c11c84]'>Email</Link>
         </div>
       </footer>
       </body>
