@@ -72,11 +72,6 @@ export default function RootLayout({
                 Portfolio
               </p>
             </Link>
-            <Link href="/services" onClick={() => {setShowMobile(!showMobile)}}>
-              <p className="text-[#15310B]  hover:text-[#c11c84] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
-                Services
-              </p>
-            </Link>
             <Link href="/contact" onClick={() => {setShowMobile(!showMobile)}}>
               <p className="text-[#15310B]  hover:text-[#c11c84] hover:bg-navyGreen block px-3 py-2 rounded-md text-base font-medium">
                 Contact Us

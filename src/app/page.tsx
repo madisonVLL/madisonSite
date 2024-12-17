@@ -11,6 +11,8 @@ export default function Home() {
         <p>My name is Madison, a second year student at the University of Chicago, studying
           chemical engineering and computer science. On campus I'm professionally envolved in:
         </p>
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div className="elfsight-app-737555a2-2ed6-4c70-84fd-11d37f3c0809" data-elfsight-app-lazy></div>
         <ul>
             <li><span className="coolGrade">AIR Lab Participatory AI Climate Study</span>:a research group which partners with the Chatham community
             to build online applications to help the community monitor air quality and flooding.</li>
